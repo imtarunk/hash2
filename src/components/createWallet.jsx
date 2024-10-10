@@ -94,7 +94,7 @@ const StarButton = () => {
                     <p>Secret Key: {keyItem.secretKey}</p>
                   </div>
                 </div>
-                <Link to={`/wallet/${keyItem.publicKey}`} className="flex flex-col justify-center items-center m-3">
+                <Link to={`/wallet`} className="flex flex-col justify-center items-center m-3">
                   <IoWallet size={'40px'} onClick={wallet(keyItem.publicKey)} color="linear-gradient(to right, #9f9f9f 0%, #fff 10%, #868686 20%)" walletPublicKey={keyItem.publicKey} />
                   <a
                     href="#"
