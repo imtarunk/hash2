@@ -1,0 +1,21 @@
+@keyframes spinCoin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.coin {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-negative-90 {
+  transform: rotateY(-90deg);
+}
+
+.rotate-y-90 {
+  transform: rotateY(90deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}

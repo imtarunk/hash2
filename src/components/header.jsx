@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
   return (
@@ -8,10 +10,10 @@ const Header = () => {
       </div>
       <div className='space-x-5 font-jersey text-lg'>
         <a href="" className="px-2 py-1 rounded-full hover:bg-gray-600">Features</a>
-        <a href="" className="px-2 py-1 rounded-full hover:bg-gray-600">Build</a>
+        <Link to={'/build'} className="px-2 py-1 rounded-full hover:bg-gray-600">Build</Link>
         <a href="" className="px-2 py-1 rounded-full hover:bg-gray-600">Resource</a>
         <a href="" className="px-2 py-1 rounded-full hover:bg-gray-600">About</a>
-        <button className='bg-green-400 px-4 py-1 border rounded-full active:shadow-none active:translate-custom' >Wallet</button>
+        <Link to={'/'}> <button className='bg-green-400 px-4 py-1 border rounded-full active:shadow-none active:translate-custom' >Wallet</button></Link>
       </div>
     </div>
   )
